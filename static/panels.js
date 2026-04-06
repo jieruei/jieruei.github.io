@@ -8,7 +8,7 @@ Vue.component('panel-list', {
                 <div class="card-body">
                     <a v-bind:href="'http://'+panel.link" target="_blank" v-if="panel.link">{{ panel.name }}</a>
                     <a v-if="!panel.link">{{ panel.name }}</a>
-                    <p v-if="panel.subtitle" style="color: gray; margin: 5px 0px">{{ panel.subtitle }}</p>
+                    <p v-if="panel.subtitle" class="card-body-subtitle">{{ panel.subtitle }}</p>
                     <p v-html = "panel.description"></p>
                 </div>
             </div>
@@ -160,10 +160,38 @@ let proj = new Vue(
     {
         projects: [
             {
+                name: "Turtles All The Way Down",
+                description: "Recursive pixel art pattern built with 5-micron photolithography on silicon wafer",
+                image: "turtle-3view.jpg",
+            },
+            {
+                name: "Grate Gatsby",
+                description: "Tunable optical diffraction grating with MEMS comb-drive electrostatic actuation",
+                image: "grate-gatsby.jpg",
+                link: "github.com/knosmos/grate-gatsby"
+            },
+            {
+                name: "Sphinx Flight Computer",
+                description: "High-performance STM32H750 flight computer for VTVL landers",
+                image: "sphinx.png"
+            },
+            {
                 name: "CPT Practice Platform",
                 description: "Platform for hosting Kahoot-style competitive programming tournaments with custom problems, 1000+ solution submissions, and 15k+ monthly page views",
                 link: "phscpt.pythonanywhere.com",
                 image: "cptplatform.png"
+            },
+            {
+                name: "Please Listen Carefully As Our Menu Options Have Changed",
+                description: "Metasurface varifocal acoustic lensing Keplerian telescope for directional audio projection",
+                image: "please-listen.jpg",
+                link: "docs.google.com/presentation/d/e/2PACX-1vSD6SdgqdLQ3Ox6F1usWn3tKaqY73g3L0eQCw3PgcIIRVDfBaj9C7lA-s6tVQZHMIdgNfg4yQmHzRzX/pub?start=false&loop=false&delayms=3000&slide=id.g39195cc7aa6_0_358"
+            },
+            {
+                name: "Please Read Instructions Carefully Before Use",
+                description: "MakeMIT 1st Place (Entertainment): Automatic lens system with intelligent target tracking and holographic feedback",
+                image: "please-read.jpg",
+                link: "devpost.com/software/please-read-instructions-carefully-before-use"
             },
             {
                 name: "Robowordle",
@@ -171,55 +199,18 @@ let proj = new Vue(
                 link: "github.com/knosmos/robowordle",
                 image: "wordle_thumb.png"
             },
-            // {
-            //     name: "Ready Set Solve",
-            //     description: "Playing the card game SET with computer vision, using homography perspective correction, contour moments, and Sobel edge detection",
-            //     link: "github.com/knosmos/set-solve",
-            //     image: "setsolve.png"
-            // },
             {
                 name: "CMDPXL",
                 description: "Terminal-based image and pixel art editor, featured by GitHub",
                 link: "github.com/knosmos/cmdpxl",
                 image: "cmdpxl.png"
             },
-            // {
-            //     name: "a-phrase-ia",
-            //     description: "HackMIT Best Use of Open-Source GenAI: natural language communication board for speech-impaired patients",
-            //     link: "ballot.hackmit.org/project/jeorl-ozixh-eoobu-dsmir",
-            //     image: "hackmit.jpg"
-            // },
-            {
-                name: "su-don't-ku",
-                description: "Lightweight realtime mobile-based computer vision Sudoku solver",
-                link: "knosmos.github.io/sudontku",
-                image: "sudontku.png"
-            },
-            /*
-            {
-                name: "Daybreak",
-                description: "Play an AI hacking yourself out of a computer",
-                link: "knosmos.github.io/daybreak",
-                image: "daybreak.png"
-            },*/
-            /*{
-                name: "Brownian Motion",
-                description: "A collection of questionable pseudorandom creative writings",
-                link: "knosmos.github.io/brownian",
-                image: "brownian2.png"
-            },*/
             {
                 name: "Stack Overflow",
                 description: "Self-driving block-stacking robot: winner of MIT Mobile Autonomous Systems Laboratory 2025",
                 link: "maslab.mit.edu/2025/wiki/team08",
                 image: "maslab.png"
             },
-            /* {
-                name: "TL;DS",
-                description: "Winner of HackPHS 2021: Math solver with OCR and handwriting capability",
-                link: "github.com/knosmos/tlds",
-                image: "tlds.jpg"
-            }, */
             {
                 name: "Rhythmvision",
                 description: "Rhythm game with browser ML-driven pose estimation",
@@ -233,57 +224,11 @@ let proj = new Vue(
                 image: "hummingbird-pcb.jpg"
             },
             {
-                name: "Flow Freer",
-                description: "World's first browser-based Flow Free solver: built using computer vision, SAT, and heuristic search",
-                link: "knosmos.github.io/flowfreer",
-                image: "flowfree.png"
-            },
-            {
                 name: "DC3Modifier",
                 description: "One-click machine learning crystal classification for atomistic simulations",
                 link: "github.com/DC3-Freitas/DC3-package",
                 image: "dc3-ovito.png"
             },
-            /*{
-                name: "USACO",
-                description: "Solutions and explanations for USA Computing Olympiad contest and training page problems",
-                link: "knosmos.github.io/usaco",
-                image: "usaco.png"
-            },*/
-            /*{
-                name: "Scribblebot",
-                description: "Contour-detecting autodraw bot to better mimic human drawing",
-                link: "github.com/knosmos/scribblebot",
-                image: "scribblebot.png"
-            },*/
-            /*
-            {
-                name: "Tres",
-                description: "The classic online multiplayer card game ripoff",
-                link: "knosmos.github.io/tres",
-                image: "tres.png"
-            },
-            /*
-            {
-                name: "SudokuGen",
-                description: "Sudoku puzzle PDF generator",
-                link: "github.com/knosmos/sudoku-gen",
-                image: "sudoku2.png"
-            },*/
-            /* {
-                name: "REXplorer",
-                description: "Timeline viewer for MIT Residence Exploration 2024 with MiniLM AI-powered search",
-                link: "knosmos.github.io/rexplorer",
-                image: "rex.jpg"
-            }, */
-            /*
-            {
-                name: "Arbiter",
-                description: "Hackathon judging system with ranking algorithm based on minimum feedback arc set problem and topological sorting",
-                link: "github.com/knosmos/arbiter",
-                image: "arbiter.png"
-            },
-            */
         ]
     }
 });
@@ -336,7 +281,7 @@ let exp_showcase = new Vue(
                 subtitle: 'Avionics Lead',
                 description: "I lead a team of four in the development of an STM32 flight computer and firmware for SPHINX, an autonomous VTVL propulsive lander pathfinder. I also design distributed extensible CANbus sensor/actuator networks for control and instrumentation on a thrust-vectoring liquid-fueled engine.",
                 link: 'rocketry.mit.edu',
-                image: 'rocket-team-TEMP.webp'
+                image: 'papyrus.webp'
             },
             {
                 name: 'Appier',
@@ -388,34 +333,6 @@ let exp = new Vue(
                 link: 'web.mit.edu/dbf/www/',
                 image: 'dbf_proto2.jpg'
             },
-            // {
-            //     name: 'Appier',
-            //     subtitle: 'Software Engineering Intern',
-            //     description: "On Appier's AIXON Backend Engineering team, I leveraged zero-shot machine learning, computer vision, and retrieval-augmented generation pipelines to build website characterization systems. I gained lots of free snacks and a taste of work in a fast-paced industry environment.",
-            //     link: 'www.appier.com/en/products/aixon',
-            //     image: 'appier2.jpg'
-            // },
-            // {
-            //     name: 'Princeton Soccer Robotics',
-            //     subtitle: 'Captain',
-            //     description: "As captain of PSR and its Lightweight Division team Radian, I integrated intelligent sensing and movement algorithms with real-world hardware to build autonomous soccer robots. We won 2nd place at the international Robocup World Championships, the best result for a USA team in at least five years.",
-            //     link: 'soccer-robotics.github.io/',
-            //     image: 'radian_team_2.jpg'
-            // },
-            // {
-            //     name: 'Applied Computing and Multimedia Lab',
-            //     subtitle: 'Research Intern',
-            //     description: 'I worked on semi-supervised techniques to help diagnose respiratory diseases with the guidance of Prof. Ching-Chun Huang. "Semi-Supervised Pulmonary Auscultation Analysis with Cross Pseudo Supervision" was a best paper finalist at the 2023 IEEE MIT URTC.',
-            //     link: 'jierueichang.github.io/assets/PulmonaryAuscultationPaper.pdf',
-            //     image: 'research.png'
-            // },
-            // {
-            //     name: 'Princeton Competitive Programming Team',
-            //     subtitle: 'Co-Founder',
-            //     description: "At PHSCPT, I taught competitive programming to over 30 members each week in preparation for national and international coding tournaments. At the Lockheed Martin Code Quest we won 1st place in NY/NJ and placed 3rd internationally.",
-            //     link: 'phscpt.github.io',
-            //     image: 'cpt2.png'
-            // },
             {
                 name: 'Princeton Autonomous Vehicle Engineering',
                 subtitle: 'GPS/RC + Computer Vision Specialist',
@@ -423,95 +340,6 @@ let exp = new Vue(
                 link: 'princetonelectricspeedboating.com',
                 image: 'pave_splash2.jpg'
             },
-            // {
-            //     name: 'PHS Math Team',
-            //     subtitle: 'Captain',
-            //     description: "In Math Team, I taught combinatorics, worked on challenging problems in individual and team settings, and participated in national competitions including ARML, HMMT, AMC, CMIMC and PUMaC. We placed 1st in the Team Round at PUMaC 2022.",
-            //     link: 'sites.google.com/view/phsmathteam/home',
-            //     image: 'math.jpg'
-            // },
-            // {
-            //     name: 'The Tower Newspaper',
-            //     subtitle: 'Software Architect',
-            //     description: 'I built and maintained PHS\'s online student newspaper with over 15k monthly views, and developed an automatic article uploading system to expedite publication turnaround.',
-            //     image: 'tower_splash.png',
-            //     link: 'towerphs.com'
-            // },
-            // {
-            //     name: 'HackPHS 2022',
-            //     subtitle: 'Tech Officer',
-            //     description: "After winning HackPHS 2021, I served on the Organizing Committee for HackPHS 2022. I developed a judging system based on graph theory to create an unbiased ranking with a limited number of judges.",
-            //     link: 'hackprincetonhs.github.io/hackphs2022/',
-            //     image: 'hackphs.jpg'
-            // },
-            // {
-            //     name: 'Program in Algebraic and Combinatorial Thinking',
-            //     subtitle: 'Mentor',
-            //     description: "I served as a mentor in PACT, a series of courses in theoretical computer science sponsored by the NSF. I graded problem sets and mentored students in combinatorics and graph theory.",
-            //     link: 'algorithmicthinking.org/',
-            //     image: 'pact.png'
-            // },
-            /*
-            {
-                name: 'Maker Faire',
-                description: "Demoed electronics projects at Maker Faire New York in <a href='https://makerfaire.com/maker/entry/63428/' style='display:inline-block;font-size:14pt'>2017</a> and <a href='https://makerfaire.com/maker/entry/67542/' style='display:inline-block;font-size:14pt'>2018</a>",
-                link: 'makerfaire.com'
-            },*/
-            /*{
-                name: 'Music After School',
-                subtitle: 'Mentor',
-                description: "I'm interested in the arts as well as the sciences, and I've tried to use my musical skills to help my community. For the past three years I mentored violin for Music After School, an outreach program designed to give low-income students better access to music education.",
-                image: 'music.jpg',
-                link: 'princetonk12.org/academics/the-arts/music-after-school'
-            },*/
-            /*
-            {
-                name: 'Kickside Martial Arts',
-                subtitle: 'Instructor',
-                description: "Taught classes in martial arts while emphasizing the importance of discipline and self-control; reached rank of 2nd Dan Black Belt",
-                link: 'kicksidema.com/'
-            }*/
-        ]
-    }
-});
-
-let achievements = new Vue({
-    el: '#achievements-grid',
-    data: {
-        items: [
-            {
-                name: "USA Computing Olympiad",
-                description: "USACO Gold (Top 5% pre-college)",
-            },
-            {
-                name: "2x AIME Qualifier",
-                description: "In 2021 and 2022, qualified for the American Invitational Mathematics Examination (offered to top 2.5% of students)",
-            },
-            {
-                name: "Lockheed Martin CodeQuest",
-                description: "1st Place in the advanced division internationally, out of 200+ teams",
-            },
-            {
-                name: "U.S. Robocup Junior",
-                description: "1st Place in the 2023 Robocup Junior National Championship; selected as USA representative in international competition (Soccer Lightweight Division)",
-            },
-            {
-                name: "Philadelphia Classic",
-                description: "2nd place in UPenn's Philadelphia Classic, a competitive programming tournament",
-            },
-            {
-                name: "HackPHS 2021",
-                description: "1st Place and Best Hardware Hack at HackPHS 2021 with 300+ competitors",
-            },
-            {
-                name: "PUMaC 2021",
-                description: "1st in Team division, 8th in Number Theory at Princeton University Mathematics Competition",
-            },
-
-            {
-                name: "Violin",
-                description: "Winner of Achievement (2022), Scholarship (2017) and Concerto (2019) competitions at Westminster Conservatory",
-            }
         ]
     }
 });
@@ -523,7 +351,7 @@ let classes = new Vue(
             classes: [{
                 num: "6.2080",
                 name: "Semiconductor Electronic Circuits",
-                desc: "Chip design class. Design, analysis, and layout of analog circuits. Diodes, transistors, amplifiers, op-amps."
+                desc: "Chip design class. Design, analysis, and layout of analog circuits. Diodes, transistors, amplifiers, op-amps. The tooling is awful but you do get to design an actual chip for fabrication by TSMC."
             },
             {
                 num: "6.2600",
@@ -533,12 +361,12 @@ let classes = new Vue(
             {
                 num: "6.5951",
                 name: "Secure Hardware Design",
-                desc: "Microarchitectural timing side channels, speculative execution attacks, Rowhammer, Trusted Execution Environment, physical attacks, hardware support for software security, and verification of digital systems."
+                desc: "AKA write malware targeting hardware on the microarchitectural level. Cache side channels, speculative execution attacks, Rowhammer, physical attacks, hardware support for software security, and verification of digital systems."
             },
             {
-                num: "6.8300",
-                name: "Advances in Computer Vision",
-                desc: "Image formation, representation theory for vision, classic multi-view geometry, multi-view geometry in the age of deep learning, differentiable rendering, neural scene representations, correspondence estimation, optical flow computation, and point tracking."
+                num: "6.3000",
+                name: "Signal Processing",
+                desc: "Your crush is sending you mixed signals? Have you tried doing a Fourier analysis?"
             },
             {
                 num: "3.985",

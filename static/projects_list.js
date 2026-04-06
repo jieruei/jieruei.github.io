@@ -29,6 +29,16 @@ let proj = new Vue({
                 year: "2026",
                 projects: [
                     {
+                        name: "Papyrus",
+                        description: "Distributed modular CANBus rocket avionics system for a thrust-vectoring nitrous engine",
+                        image: "papyrus.webp"
+                    },
+                    {
+                        name: "Sphinx Flight Computer",
+                        description: "High-performance STM32H750 flight computer for VTVL landers",
+                        image: "sphinx.png"
+                    },
+                    {
                         name: "Please Listen Carefully As Our Menu Options Have Changed",
                         description: "Metasurface varifocal acoustic lensing Keplerian telescope for directional audio projection",
                         image: "please-listen.jpg",
@@ -46,6 +56,12 @@ let proj = new Vue({
                         image: "turtles_wafer.png",
                     },
                     {
+                        name: "Grate Gatsby",
+                        description: "Tunable optical diffraction grating with MEMS comb-drive actuation made on a 2-micron SOI DRIE process",
+                        image: "grate-gatsby.jpg",
+                        link: "github.com/knosmos/grate-gatsby"
+                    },
+                    {
                         name: "wingman",
                         description: "Real-time flight tracker app for the frequent flyer, built with React Native",
                         // link: "github.com/knosmos/wingman",
@@ -57,18 +73,8 @@ let proj = new Vue({
                         image: "riskfiveai.png"
                     },
                     {
-                        name: "Papyrus",
-                        description: "Distributed modular CANBus rocket avionics system",
-                        image: "papyrus.jpg"
-                    },
-                    {
-                        name: "Sphinx Flight Computer",
-                        description: "High-performance flight computer for VTVL landers",
-                        image: "sphinx.jpg"
-                    },
-                    {
                         name: "Nybbler",
-                        description: "RP2040 ortholinear 40% mechanical keyboard",
+                        description: "RP2040 ortholinear 40% mechanical keyboard with custom PCB and firmware",
                         image: "nybbler.jpg"
                     }
                     // {

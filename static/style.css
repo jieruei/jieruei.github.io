@@ -236,7 +236,6 @@ p {
 a {
     color: var(--accent);
     text-decoration: none;
-    text-shadow: 0px 0px 10px var(--secondary);
     /*font-family: Poppins, sans-serif;*/
     cursor: pointer;
     transition: all 0.1s;
@@ -246,7 +245,7 @@ a {
 }
 a:hover {
     color: var(--heading);
-    text-shadow: 0px 0px 20px var(--text);  
+    text-shadow: 0px 0px 20px var(--secondary);  
     letter-spacing: 0.05px;
 }
 hr {
@@ -314,8 +313,8 @@ h2 {
     color:var(--text);
     background-color: var(--background);
     transition: all 0.2s;
-    border-radius: 3px;
-    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    border: 1px solid var(--secondary);
     display: block;
     z-index: 0;
     height: 100%;
@@ -365,15 +364,15 @@ h2 {
     }
 }
 .card .card-img{
-    width:calc(100% + 4px);
+    width:calc(100% + 2px);
     height:150px;
-    border-radius: 3px 3px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     background-size:cover;
     background-position:center;
-    border: 2px solid var(--secondary);
+    border: 1px solid var(--secondary);
     box-sizing: border-box;
-    left:-2px;
-    top:-2px;
+    left:-1px;
+    top:-1px;
     position:relative;
     transform: left 0.5s right 0.5s !important;
 }
@@ -381,7 +380,7 @@ h2 {
     height: 300px;
 }
 .card-body {
-    padding: 15px;
+    padding: 12px;
 }
 .card-body p{
     color: var(--text);
@@ -392,8 +391,16 @@ h2 {
 .card-body a{
     display:block;
     background-color:transparent;
-    font-size: 18pt;
+    font-size: 14pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "SpaceGrotesk", Poppins, sans-serif;
     /*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+}
+.card-body .card-body-subtitle {
+    color: gray;
+    margin: 5px 0px;
+    font-size: 12pt;
 }
 
 /* Showcases */
@@ -421,8 +428,8 @@ h2 {
     height: 250px;
     background-size: cover;
     background-position: center;
-    border-radius: 5px;
-    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    border: 1px solid var(--secondary);
     box-sizing: border-box;
 }
 
@@ -495,7 +502,7 @@ h2 {
     top: 20px;
     right: 20px;
     background-color: #052d47;
-    border: 2px solid var(--secondary);
+    border: 1px solid var(--secondary);
     width: 60px;
     aspect-ratio: 1;
     border-radius: 50%;
