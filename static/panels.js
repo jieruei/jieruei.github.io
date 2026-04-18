@@ -166,14 +166,14 @@ let proj = new Vue(
             },
             {
                 name: "Grate Gatsby",
-                description: "Tunable optical diffraction grating with MEMS comb-drive electrostatic actuation",
+                description: "Tunable optical diffraction grating with MEMS comb-drive electrostatic actuation built with a 10-micron SOI process",
                 image: "grate-gatsby.jpg",
                 link: "github.com/knosmos/grate-gatsby"
             },
             {
                 name: "Sphinx Flight Computer",
-                description: "High-performance STM32H750 flight computer for VTVL landers",
-                image: "sphinx.png"
+                description: "STM32H750 flight computer and power system for VTVL landers, with integrated IMU, altimeter, GPS, and LoRa communications",
+                image: "sphinx_integrated.jpg"
             },
             {
                 name: "CPT Practice Platform",
