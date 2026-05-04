@@ -54,6 +54,23 @@ let proj_showcase = new Vue(
             //     image: "fpga-drone.jpg",
             // },
             {
+                name: "Grate Gatsby",
+                subtitle: "Tunable MEMS diffraction grating",
+                description: "We designed and fabricated a tunable optical diffraction grating based on MEMS comb-drive electrostatic actuation. The device was built on a 10-micron SOI wafer with a 3-micron DRIE process, and can dynamically adjust its diffraction properties for applications in spectroscopy and beam steering. This tiny chip took like a hundred hours of fabrication and $5k of MIT.nano resources to make.",
+                link: "github.com/knosmos/grate-gatsby",
+                image: "grate-gatsby-chip.jpg",
+                links: [
+                    {
+                        name: "Technical Paper",
+                        link: "jierueichang.github.io/assets/grate-gatsby.pdf"
+                    },
+                    {
+                        name: "Project Repository",
+                        link: "github.com/knosmos/grate-gatsby"
+                    },
+                ]
+            },
+            {
                 name: "An Image is Worth 16×16 Tiles",
                 subtitle: "Multicore parallel computer vision accelerator",
                 description: "We developed a quadcore processor specialized for computer vision workloads. It uses parallel processor cores, takes advantage of massively parallel combinational memory reads, and exploits parallelizable properties of image processing tasks. We implemented this system on a Spartan-7 FPGA and validated performance on multiple computer vision pipelines, demonstrating ~17x speedup.",
@@ -164,12 +181,12 @@ let proj = new Vue(
                 description: "Recursive pixel art pattern built with 5-micron photolithography on silicon wafer",
                 image: "turtle-3view.jpg",
             },
-            {
-                name: "Grate Gatsby",
-                description: "Tunable optical diffraction grating with MEMS comb-drive electrostatic actuation built with a 10-micron SOI process",
-                image: "grate-gatsby.jpg",
-                link: "github.com/knosmos/grate-gatsby"
-            },
+            // {
+            //     name: "Grate Gatsby",
+            //     description: "Tunable optical diffraction grating with MEMS comb-drive electrostatic actuation built with a 10-micron SOI process",
+            //     image: "grate-gatsby.jpg",
+            //     link: "github.com/knosmos/grate-gatsby"
+            // },
             {
                 name: "Sphinx Flight Computer",
                 description: "STM32H750 flight computer and power system for VTVL landers, with integrated IMU, altimeter, GPS, and LoRa communications",
@@ -201,7 +218,7 @@ let proj = new Vue(
             },
             {
                 name: "CMDPXL",
-                description: "Terminal-based image and pixel art editor, featured by GitHub",
+                description: "Terminal-based image and pixel art editor. Somehow my most popular project ever. Featured by GitHub.",
                 link: "github.com/knosmos/cmdpxl",
                 image: "cmdpxl.png"
             },

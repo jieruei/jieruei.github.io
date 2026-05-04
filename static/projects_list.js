@@ -36,7 +36,7 @@ let proj = new Vue({
                     {
                         name: "Sphinx Flight Computer",
                         description: "High-performance STM32H750 flight computer for VTVL landers",
-                        image: "sphinx.png"
+                        image: "sphinx_integrated.jpg"
                     },
                     {
                         name: "Please Listen Carefully As Our Menu Options Have Changed",
@@ -51,14 +51,14 @@ let proj = new Vue({
                         link: "devpost.com/software/please-read-instructions-carefully-before-use"
                     },
                     {
-                        name: "It's Turtles All The Way Down",
+                        name: "Turtles All The Way Down",
                         description: "Recursive pixel art pattern built with 5-micron photolithography on silicon wafer",
                         image: "turtles_wafer.png",
                     },
                     {
                         name: "Grate Gatsby",
-                        description: "Tunable optical diffraction grating with MEMS comb-drive actuation made on a 2-micron SOI DRIE process",
-                        image: "grate-gatsby.jpg",
+                        description: "Tunable optical diffraction grating with MEMS comb-drive actuation made on a 10-micron SOI DRIE process",
+                        image: "grate-gatsby-chip.jpg",
                         link: "github.com/knosmos/grate-gatsby"
                     },
                     {
@@ -76,6 +76,11 @@ let proj = new Vue({
                         name: "Nybbler",
                         description: "RP2040 ortholinear 40% mechanical keyboard with custom PCB and firmware",
                         image: "nybbler.jpg"
+                    },
+                    {
+                        name: "PCB Bowtie",
+                        description: "A hastily made STM32 LED bowtie for MIT Ring Delivery",
+                        image: "bowtie.webp"
                     }
                     // {
                     //     name: "red i removal",
