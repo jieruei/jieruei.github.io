@@ -68,6 +68,10 @@ let proj_showcase = new Vue(
                         name: "Project Repository",
                         link: "github.com/knosmos/grate-gatsby"
                     },
+                    {
+                        name: "Project Presentation",
+                        link: "docs.google.com/presentation/d/e/2PACX-1vQXB0M1xmewHRNvFU4T3vgQ8k_zZIwviEbwVnmHmlpDbTlaOk5E5B1BzpE7vICLoAxJymx_KQaP-qTi/pub?start=false&loop=false&delayms=3000"
+                    }
                 ]
             },
             {
@@ -192,12 +196,12 @@ let proj = new Vue(
                 description: "STM32H750 flight computer and power system for VTVL landers, with integrated IMU, altimeter, GPS, and LoRa communications",
                 image: "sphinx_integrated.jpg"
             },
-            {
-                name: "CPT Practice Platform",
-                description: "Platform for hosting Kahoot-style competitive programming tournaments with custom problems, 1000+ solution submissions, and 15k+ monthly page views",
-                link: "phscpt.pythonanywhere.com",
-                image: "cptplatform.png"
-            },
+            // {
+            //     name: "CPT Practice Platform",
+            //     description: "Platform for hosting Kahoot-style competitive programming tournaments with custom problems, 1000+ solution submissions, and 15k+ monthly page views",
+            //     link: "phscpt.pythonanywhere.com",
+            //     image: "cptplatform.png"
+            // },
             {
                 name: "Please Listen Carefully As Our Menu Options Have Changed",
                 description: "Metasurface varifocal acoustic lensing Keplerian telescope for directional audio projection",
@@ -228,12 +232,12 @@ let proj = new Vue(
                 link: "maslab.mit.edu/2025/wiki/team08",
                 image: "maslab.png"
             },
-            {
-                name: "Rhythmvision",
-                description: "Rhythm game with browser ML-driven pose estimation",
-                link: "knosmos.github.io/rhythmvision",
-                image: "rhythmvision3.png"
-            },
+            // {
+            //     name: "Rhythmvision",
+            //     description: "Rhythm game with browser ML-driven pose estimation",
+            //     link: "knosmos.github.io/rhythmvision",
+            //     image: "rhythmvision3.png"
+            // },
             {
                 name: "Hummingbird",
                 description: "A custom STM32-based flight controller for autonomous gliders",
@@ -272,9 +276,15 @@ let exp_showcase = new Vue(
             {
                 name: "Space Propulsion Laboratory",
                 subtitle: "Software Engineer",
-                description: "I develop mission control software for STEP-1, a CubeSat demonstrator of a novel electrospray propulsion engine. Closer to the hardware, I'm developing high-redundancy firmware for STEP-1's onboard payload controller to interface with sensors and propulsion systems.",
-                link: "spl.mit.edu",
-                image: "step1.jpg"
+                description: "I develop mission control software and conduct S-band SDR testing for STEP-1, a CubeSat demonstrator of a novel electrospray propulsion engine. Closer to the hardware, I'm developing high-redundancy firmware for STEP-1's onboard payload controller to interface with sensors and propulsion systems.",
+                image: "step1.jpg",
+                link: 'spacepropulsion.mit.edu',
+                links: [
+                    {
+                        name: "Group Website",
+                        link: "spacepropulsion.mit.edu"
+                    }
+                ]
             },
             {
                 name: 'World Wildlife Fund',
@@ -298,7 +308,13 @@ let exp_showcase = new Vue(
                 subtitle: 'Avionics Lead',
                 description: "I lead a team of four in the development of an STM32 flight computer and firmware for SPHINX, an autonomous VTVL propulsive lander pathfinder. I also design distributed extensible CANbus sensor/actuator networks for control and instrumentation on a thrust-vectoring liquid-fueled engine.",
                 link: 'rocketry.mit.edu',
-                image: 'papyrus.webp'
+                image: 'papyrus.webp',
+                links: [
+                    {
+                        name: "Team Website",
+                        link: "rocketry.mit.edu"
+                    },
+                ]
             },
             {
                 name: 'Appier',
@@ -368,12 +384,12 @@ let classes = new Vue(
             classes: [{
                 num: "6.2080",
                 name: "Semiconductor Electronic Circuits",
-                desc: "Chip design class. Design, analysis, and layout of analog circuits. Diodes, transistors, amplifiers, op-amps. The tooling is awful but you do get to design an actual chip for fabrication by TSMC."
+                desc: "Chip design class. Design, analysis, and layout of analog circuits. Diodes, transistors, amplifiers, op-amps. The tooling is awful and the lectures are the same three equations over and over, but you do get to design an actual chip for fabrication by TSMC."
             },
             {
                 num: "6.2600",
                 name: "Micro/Nano Processing Technology",
-                desc: "Wet and dry etching, chemical and physical deposition, lithography, thermal processes, and device and materials characterization. You get to work in the MIT.nano cleanroom omg."
+                desc: "Wet and dry etching, chemical and physical deposition, lithography, thermal processes, and device and materials characterization. Working in the world's most advanced university cleanroom is an insanely cool and exhausting and rewarding experience."
             },
             {
                 num: "6.5951",

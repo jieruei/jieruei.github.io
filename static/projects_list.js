@@ -29,6 +29,12 @@ let proj = new Vue({
                 year: "2026",
                 projects: [
                     {
+                        name: "Grate Gatsby",
+                        description: "Tunable optical diffraction grating with MEMS comb-drive actuation made on a 10-micron SOI DRIE process",
+                        image: "grate-gatsby-chip.jpg",
+                        link: "github.com/knosmos/grate-gatsby"
+                    },
+                    {
                         name: "Papyrus",
                         description: "Distributed modular CANBus rocket avionics system for a thrust-vectoring nitrous engine",
                         image: "papyrus.webp"
@@ -56,12 +62,6 @@ let proj = new Vue({
                         image: "turtles_wafer.png",
                     },
                     {
-                        name: "Grate Gatsby",
-                        description: "Tunable optical diffraction grating with MEMS comb-drive actuation made on a 10-micron SOI DRIE process",
-                        image: "grate-gatsby-chip.jpg",
-                        link: "github.com/knosmos/grate-gatsby"
-                    },
-                    {
                         name: "wingman",
                         description: "Real-time flight tracker app for the frequent flyer, built with React Native",
                         // link: "github.com/knosmos/wingman",
@@ -70,12 +70,18 @@ let proj = new Vue({
                     {
                         name: "riskfive.ai",
                         description: "RISC-V interpreter powered entirely by LLM",
-                        image: "riskfiveai.png"
+                        image: "riskfiveai.png",
+                        link: "youtube.com/watch?v=6p6ycKaS7sE"
                     },
                     {
                         name: "Nybbler",
                         description: "RP2040 ortholinear 40% mechanical keyboard with custom PCB and firmware",
                         image: "nybbler.jpg"
+                    },
+                    {
+                        name: "Diffamp",
+                        description: "Single-stage differential amplifier with active load, designed for TSMC 65nm process. Fifty hours of horrible Cadence layout.",
+                        image: "diffamp.jpg"
                     },
                     {
                         name: "PCB Bowtie",
@@ -162,7 +168,7 @@ let proj = new Vue({
                     },*/
                     {
                         name: "Tachigurasu",
-                        description: "An AI tamagotchi to fix your posture, built with ESP32",
+                        description: "An AI tamagotchi to fix your posture. Despite winning zero hackathon awards, it got featured by MLH.",
                         link: "devpost.com/software/tachigurasu",
                         image: "tachi-cover.png"
                     },
