@@ -260,6 +260,19 @@ let exp_showcase = new Vue(
     data:
     {
         items: [
+            // {
+            //     name: 'Citadel Securities',
+            //     subtitle: 'Software Engineering Intern',
+            //     description: "Neural network quantization for FPGA inference.",
+            //     link: 'www.citadelsecurities.com',
+            //     image: 'citsec_tmp.jpg'
+            // },
+            // {
+            //     name: 'Niroui Group',
+            //     subtitle: 'Undergraduate Researcher',
+            //     description: "Design and fabrication of nanoelectromechanical systems.",
+            //     link: 'niroui.mit.edu',
+            // },
             {
                 name: 'Freitas Research Group',
                 subtitle: 'Undergraduate Researcher',
@@ -381,31 +394,28 @@ let classes = new Vue(
     {
         el: '#classes',
         data: {
-            classes: [{
-                num: "6.2080",
-                name: "Semiconductor Electronic Circuits",
-                desc: "Chip design class. Design, analysis, and layout of analog circuits. Diodes, transistors, amplifiers, op-amps. The tooling is awful and the lectures are the same three equations over and over, but you do get to design an actual chip for fabrication by TSMC."
-            },
-            {
-                num: "6.2600",
-                name: "Micro/Nano Processing Technology",
-                desc: "Wet and dry etching, chemical and physical deposition, lithography, thermal processes, and device and materials characterization. Working in the world's most advanced university cleanroom is an insanely cool and exhausting and rewarding experience."
-            },
-            {
-                num: "6.5951",
-                name: "Secure Hardware Design",
-                desc: "AKA write malware targeting hardware on the microarchitectural level. Cache side channels, speculative execution attacks, Rowhammer, physical attacks, hardware support for software security, and verification of digital systems."
-            },
-            {
-                num: "6.3000",
-                name: "Signal Processing",
-                desc: "Your crush is sending you mixed signals? Have you tried doing a Fourier analysis?"
-            },
-            {
-                num: "3.985",
-                name: "Archaeological Science",
-                desc: "Archaeology as an anthropological science. 14C dating, ice core and palynological analysis, GIS and other remote sensing techniques for site location, organic residue analysis."
-            }]
+            classes: [
+                {
+                    num: "6.2050",
+                    name: "Digital Systems Laboratory",
+                    desc: "FPGA-based digital system design using SystemVerilog. As a final project, we chose to tackle an image processing GPU with a four-stage highly-customized RISC core architecture on a Spartan-7. Probably the most intensive but interesting class I've taken at MIT.",
+                },
+                {
+                    num: "6.2600",
+                    name: "Micro/Nano Processing Technology",
+                    desc: "Wet and dry etching, chemical and physical deposition, lithography, thermal processes, and device and materials characterization. Working in the world's most advanced university cleanroom is an insanely cool and exhausting and rewarding experience.",
+                },
+                {
+                    num: "6.2080",
+                    name: "Semiconductor Electronic Circuits",
+                    desc: "Chip design class. Design, analysis, and layout of analog circuits. Diodes, transistors, amplifiers, op-amps. The tooling is awful but you do get to design an actual chip for fabrication by TSMC.",
+                },
+                {
+                    num: "6.5951",
+                    name: "Secure Hardware Design",
+                    desc: "AKA malware class. Attack hardware on the microarchitectural level. Cache side channels, speculative execution, Rowhammer, physical attacks, formal verification."
+                }
+            ]
         },
     }
 )

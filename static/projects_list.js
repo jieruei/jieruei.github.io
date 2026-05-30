@@ -87,11 +87,13 @@ let proj = new Vue({
                         name: "PCB Bowtie",
                         description: "A hastily made STM32 LED bowtie for MIT Ring Delivery",
                         image: "bowtie.webp"
-                    }
-                    // {
-                    //     name: "red i removal",
-                    //     description: "Automated removal of lowercase 'i' characters from images using computer vision and ML inpainting",
-                    // },
+                    },
+                    {
+                        name: "red i removal",
+                        description: "Automated removal of lowercase 'i' characters from images using lightweight U-Net",
+                        image: "red-i.jpg",
+                        link: "github.com/knosmos/red-i-removal"
+                    },
                 ]
             },
             {

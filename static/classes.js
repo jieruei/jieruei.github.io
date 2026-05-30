@@ -10,6 +10,18 @@ let classes = new Vue(
                     grade: "A",
                 },
                 {
+                    num: "6.2600",
+                    name: "Micro/Nano Processing Technology",
+                    desc: "Wet and dry etching, chemical and physical deposition, lithography, thermal processes, and device and materials characterization. Working in the world's most advanced university cleanroom is an insanely cool and exhausting and rewarding experience.",
+                    grade: "A+",
+                },
+                {
+                    num: "6.2080",
+                    name: "Semiconductor Electronic Circuits",
+                    desc: "Chip design class. Design, analysis, and layout of analog circuits. Diodes, transistors, amplifiers, op-amps. The tooling is awful but you do get to design an actual chip for fabrication by TSMC.",
+                    grade: "A",
+                },
+                {
                     num: "6.4210",
                     name: "Robotic Manipulation",
                     desc: "Kinematics, dynamics, and control of robotic manipulators. Motion planning, grasping, perception.",
@@ -20,6 +32,12 @@ let classes = new Vue(
                     name: "Deep Learning (Graduate)",
                     desc: "MLP, CNN, RNN, transformers, autoencoders, graph neural networks, diffusion models. Taught partially by the guy who invented ResNet. Fast-paced.",
                     grade: "A",
+                },
+                {
+                    num: "6.5951",
+                    name: "Secure Hardware Design",
+                    desc: "Write malware targeting hardware on the microarchitectural level. Cache side channels, speculative execution, Rowhammer, physical attacks, formal verification.",
+                    grade: "A"
                 },
                 {
                     num: "6.2000",
@@ -51,12 +69,6 @@ let classes = new Vue(
                     desc: "Data structures and algorithms. Sorting, searching, graph algorithms, dynamic programming.",
                     grade: "A",
                 },
-                // {
-                //     num: "18.06",
-                //     name: "Linear Algebra",
-                //     desc: "Matrix theory, vector spaces, eigenvalues and eigenvectors, linear transformations.",
-                //     grade: "A",
-                // },
                 {
                     num: "6.9600",
                     name: "Mobile Autonomous Systems Laboratory",
@@ -67,6 +79,12 @@ let classes = new Vue(
                     num: "6.1200",
                     name: "Mathematics for Computer Science",
                     desc: "Discrete math, probability, graph theory, and too many induction proofs.",
+                    grade: "A",
+                },
+                {
+                    num: "6.3000",
+                    name: "Signal Processing",
+                    desc: "All-you-can-eat fourier transforms.",
                     grade: "A",
                 },
                 {
@@ -109,6 +127,12 @@ let humanities = new Vue(
                     desc: "Ethnomusicological survey of global musical traditions, from African drumming to Indian classical music to Indonesian gamelan.",
                     grade: "A",
                 },
+                {
+                    num: "3.985",
+                    name: "Archaeological Science",
+                    desc: "Archaeology as an anthropological science. 14C dating, ice core and palynological analysis, GIS and other remote sensing techniques for site location, organic residue analysis.",
+                    grade: "A",
+                }
             ]
         }
     }
