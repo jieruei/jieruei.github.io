@@ -260,13 +260,13 @@ let exp_showcase = new Vue(
     data:
     {
         items: [
-            // {
-            //     name: 'Citadel Securities',
-            //     subtitle: 'Software Engineering Intern',
-            //     description: "Neural network quantization for FPGA inference.",
-            //     link: 'www.citadelsecurities.com',
-            //     image: 'citsec_tmp.jpg'
-            // },
+            {
+                name: 'Citadel Securities',
+                subtitle: 'Software Engineering Intern',
+                description: "Modern high-frequency trading is so fast that CPUs can't keep up: the operating system gets in the way. Instead, ultra-low-latency trading systems are built on FPGAs that process market data and execute trades on the order of nanoseconds. I work on some of the systems and optimization algorithms that make this kind of trading possible.",
+                link: 'www.citadelsecurities.com',
+                image: '425park.jpg'
+            },
             // {
             //     name: 'Niroui Group',
             //     subtitle: 'Undergraduate Researcher',
