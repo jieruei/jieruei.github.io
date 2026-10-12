@@ -62,7 +62,7 @@ let proj_showcase = new Vue(
                 links: [
                     {
                         name: "Technical Paper",
-                        link: "jierueichang.github.io/assets/grate-gatsby.pdf"
+                        link: "jieruei.github.io/assets/grate-gatsby.pdf"
                     },
                     {
                         name: "Project Repository",
@@ -87,7 +87,7 @@ let proj_showcase = new Vue(
                     },
                     {
                         name: "Technical Paper",
-                        link: "jierueichang.github.io/assets/peep.pdf"
+                        link: "jieruei.github.io/assets/peep.pdf"
                     }
                 ]
             },
@@ -133,7 +133,7 @@ let proj_showcase = new Vue(
                 links: [
                     {
                         name: "Technical Paper",
-                        link: "jierueichang.github.io/assets/poser.pdf"
+                        link: "jieruei.github.io/assets/poser.pdf"
                     },
                     {
                         name: "Project Video",
@@ -267,12 +267,6 @@ let exp_showcase = new Vue(
                 link: 'www.citadelsecurities.com',
                 image: '425park.jpg'
             },
-            // {
-            //     name: 'Niroui Group',
-            //     subtitle: 'Undergraduate Researcher',
-            //     description: "Design and fabrication of nanoelectromechanical systems.",
-            //     link: 'niroui.mit.edu',
-            // },
             {
                 name: 'Freitas Research Group',
                 subtitle: 'Undergraduate Researcher',
@@ -312,7 +306,7 @@ let exp_showcase = new Vue(
                     },
                     {
                         name: "Technical Report",
-                        link: "jierueichang.github.io/assets/cattlelogue.pdf"
+                        link: "jieruei.github.io/assets/cattlelogue.pdf"
                     }
                 ]
             },
@@ -338,7 +332,7 @@ let exp_showcase = new Vue(
                 links: [
                     {
                         name: "Final Presentation",
-                        link: "jierueichang.github.io/assets/appier.pdf"
+                        link: "jieruei.github.io/assets/appier.pdf"
                     }
                 ]
             },
@@ -346,7 +340,7 @@ let exp_showcase = new Vue(
                 name: 'Applied Computing and Multimedia Lab',
                 subtitle: 'Research Intern',
                 description: 'I worked on semi-supervised techniques to help diagnose respiratory diseases under the guidance of Prof. Ching-Chun Huang. Leveraging time-series RNNs and twin-network cross supervision, my model could produce accurate respiratory sound classifications even if only 1/16 of its dataset was labeled. "Semi-Supervised Pulmonary Auscultation Analysis with Cross Pseudo Supervision" was a best paper finalist at the 2023 IEEE MIT Undergraduate Research Technology Conference.',
-                link: 'jierueichang.github.io/assets/PulmonaryAuscultationPaper.pdf',
+                link: 'jieruei.github.io/assets/PulmonaryAuscultationPaper.pdf',
                 image: 'research.png',
                 links: [
                     {
