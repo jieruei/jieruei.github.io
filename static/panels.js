@@ -261,6 +261,13 @@ let exp_showcase = new Vue(
     {
         items: [
             {
+                name: 'Niroui Research Group',
+                subtitle: 'Undergraduate Researcher',
+                description: "Computers don't have to be built from transistors. I think about nanoelectromechanical neural systems that can interact with the world and perform machine learning tasks using a fraction of the energy.",
+                link: 'niroui.mit.edu',
+                image: 'niroui.png'
+            },
+            {
                 name: 'Citadel Securities',
                 subtitle: 'Software Engineering Intern',
                 description: "Modern high-frequency trading is so fast that CPUs can't keep up: the operating system gets in the way. Instead, ultra-low-latency trading systems are built on FPGAs that process market data and execute trades on the order of nanoseconds. I work on some of the systems and optimization algorithms that make this kind of trading possible.",
@@ -270,7 +277,7 @@ let exp_showcase = new Vue(
             {
                 name: 'Freitas Research Group',
                 subtitle: 'Undergraduate Researcher',
-                description: "I leverage E(3)-equivariant graph convolutional neural networks to characterize chromium diffusion rates in advanced metal 3D printing, and wield SLURM to run large-scale simulations on high-performance compute clusters. Pictured is a visualization of our GNN-based phase prediction and interface tracking system. Our prior work on graph neural networks for crystal structure classification ran 10x faster and with 11% higher accuracy than existing data-driven methods.",
+                description: "I leveraged E(3)-equivariant graph convolutional neural networks to characterize chromium diffusion rates in advanced metal 3D printing, and ran large-scale simulations on high-performance compute clusters. Pictured is a visualization of our GNN-based phase prediction and interface tracking system. Our prior work on graph neural networks for crystal structure classification ran 10x faster and with 11% higher accuracy than existing data-driven methods.",
                 link: 'freitas.mit.edu',
                 image: 'freitas-crystal-growth.gif',
                 links: [
@@ -313,7 +320,7 @@ let exp_showcase = new Vue(
             {
                 name: 'MIT Rocket Team',
                 subtitle: 'Avionics Lead',
-                description: "I lead a team of four in the development of an STM32 flight computer and firmware for SPHINX, an autonomous VTVL propulsive lander pathfinder. I also design distributed extensible CANbus sensor/actuator networks for control and instrumentation on a thrust-vectoring liquid-fueled engine.",
+                description: "I spearheaded the development of an STM32 flight computer and firmware for SPHINX, an autonomous VTVL propulsive lander pathfinder. I also design distributed extensible CANbus sensor/actuator networks for control and instrumentation on a thrust-vectoring liquid-fueled engine.",
                 link: 'rocketry.mit.edu',
                 image: 'papyrus.webp',
                 links: [
@@ -390,6 +397,11 @@ let classes = new Vue(
         data: {
             classes: [
                 {
+                    num: "6.6010",
+                    name: "Analysis and Design of Digital Integrated Circuits (Graduate)",
+                    desc: "VLSI. Digital ASIC design on Intel 16nm process. Theory, design, layout, analog and digital simulation, verification. Logic, clock, and memory optimization. Modern IC design flows."
+                },
+                {
                     num: "6.2050",
                     name: "Digital Systems Laboratory",
                     desc: "FPGA-based digital system design using SystemVerilog. As a final project, we chose to tackle an image processing GPU with a four-stage highly-customized RISC core architecture on a Spartan-7. Probably the most intensive but interesting class I've taken at MIT.",
@@ -398,11 +410,6 @@ let classes = new Vue(
                     num: "6.2600",
                     name: "Micro/Nano Processing Technology",
                     desc: "Wet and dry etching, chemical and physical deposition, lithography, thermal processes, and device and materials characterization. Working in the world's most advanced university cleanroom is an insanely cool and exhausting and rewarding experience.",
-                },
-                {
-                    num: "6.2080",
-                    name: "Semiconductor Electronic Circuits",
-                    desc: "Chip design class. Design, analysis, and layout of analog circuits. Diodes, transistors, amplifiers, op-amps. The tooling is awful but you do get to design an actual chip for fabrication by TSMC.",
                 },
                 {
                     num: "6.5951",

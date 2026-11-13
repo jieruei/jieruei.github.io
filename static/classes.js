@@ -4,6 +4,16 @@ let classes = new Vue(
         data: {
             classes: [
                 {
+                    num: "6.6010",
+                    name: "Analysis and Design of Digital Integrated Circuits (Graduate)",
+                    desc: "VLSI. Digital ASIC design on Intel 16nm process. Theory, design, layout, analog and digital simulation, verification. Logic, clock, and memory optimization. Modern IC design flows."
+                },
+                {
+                    num: "6.6410",
+                    name: "Quantum Computation (Graduate)",
+                    desc: "Physics of information processing; quantum algorithms, communication, cryptography. Taught by Peter Shor of Shor's Algorithm fame."
+                },
+                {
                     num: "6.2050",
                     name: "Digital Systems Laboratory",
                     desc: "FPGA-based digital system design using SystemVerilog. We built an image processing GPU with a four-stage core architecture on a Spartan-7. Probably the most intensive but interesting class I've taken at MIT.",
@@ -38,6 +48,11 @@ let classes = new Vue(
                     name: "Secure Hardware Design",
                     desc: "Write malware targeting hardware on the microarchitectural level. Cache side channels, speculative execution, Rowhammer, physical attacks, formal verification.",
                     grade: "A"
+                },
+                {
+                    num: "21M.389",
+                    name: "Studies in Advanced Music Technology and Computation",
+                    desc: "Audio signal processing. Acoustic simulation and processing algorithms; 3D audio, classifiers for sound events, speech recognition, machine learning, denoising, localization and beamforming."
                 },
                 {
                     num: "6.2000",
@@ -132,6 +147,16 @@ let humanities = new Vue(
                     name: "Archaeological Science",
                     desc: "Archaeology as an anthropological science. 14C dating, ice core and palynological analysis, GIS and other remote sensing techniques for site location, organic residue analysis.",
                     grade: "A",
+                },
+                {
+                    num: "21M.370",
+                    name: "Digital Instrument Design",
+                    desc: "The intersection of hardware, software, user experience (UI/UX), and musical expression. Design, construction, and performance of custom electronic instruments and synthesizers."
+                },
+                {
+                    num: "STS.004",
+                    name: "Intersections: Science, Technology, and the World",
+                    desc: "Introduction to the history of science and technology, and their interactions with society and politics."
                 }
             ]
         }
